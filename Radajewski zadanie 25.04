@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input id="n1" type="number">
+            <input type="button" value="oblicz" onClick="f1()">
+            <br /> <br />
+            
+
+        </form>
+        <script>
+            
+            function f1() {
+                var liczba = document.getElementById("n1").value;
+            
+                if (liczba < 20) {
+                    document.getElementById("wynik").innerHTML="liczba poza przedziałem";
+                }
+                else if (liczba > 30) {
+                    document.getElementById("wynik").innerHTML="liczba poza przedziałem";
+                }
+                else {
+                    document.getElementById("wynik").innerHTML="liczba w przedziale";
+                }
+                
+            }
+        </script>
+        <div id="wynik">Wynik to: </div>
+    </body>
+</html>
