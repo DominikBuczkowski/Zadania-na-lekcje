@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                color: #ffffff;
+                background-color: #000000;
+            }
+            .container {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: fit-content;
+            }
+            .bok {
+                width: 33.3%;
+                float: left;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            #wys {
+                text-align: center;
+                clear: both;
+            }
+            input {
+                width: 100px;
+            }
+
+            #end {
+                width: 100%;
+                background-color: #ffffff;
+                color: #000000;
+            }
+            #mar {
+                width: 100%;
+            }
+            #pp {
+                text-align: center;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="container">
+            <form action="php.php" method="get">
+                <div class="bok">
+                    <p>Wprowadz liczbe 1</p>
+                    <br />
+                    <input name="liczba1" type="number"/>
+                </div>
+
+                <div class="bok">
+                <p>Wybierz operator</p>
+                <br />
+                <select name="operator">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+        
+                </div>
+
+                <div class="bok">
+                    <p>Wprowadz liczbe 2</p>
+                    </br>
+                    <input name="liczba2" type="number"/>
+                </div>
+
+                <div id="wys">
+                    </br></br>
+                    <input type="submit" name="wyslij" value="Wyslij" id="end"/>
+                </div>
+            </form>
+                <div style="width: 100%; font-size: 100px;">
+                    <marquee Scrollamount=10>BRUH</marquee>
+                </div>
+        </div>
+    </body>
+</html>
